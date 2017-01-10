@@ -1,10 +1,7 @@
-var myApp = angular.module('myApp', []);
-
-myApp.controller('mainController', ['$scope', function($scope){
-  console.log('totally angular dude');
+var myApp = angular.module('myApp', ['ngRoute']);
 
   myApp.config(['$routeProvider', function($routeProvider){
-    $routerProvider
+    $routeProvider
       .when('/home',{
         templateUrl:'views/characters/home.html',
         controller: 'homeController'
@@ -25,7 +22,3 @@ myApp.controller('mainController', ['$scope', function($scope){
         redirectTo: 'home'
       });
   }]); //end of config
-
-
-
-}]); //end of mainController

@@ -7,9 +7,9 @@
     <script src="/vendor/angular.min.js" type="text/javascript"></script>
     <script src="/vendor/angular-route.min.js" type="text/javascript"></script>
     <script src="/scripts/client.js" type="text/javascript"></script>
+    <script src='/scripts/controllers/bugsController.js' type="text/javascript"></script>
   </head>
   <body ng-app='myApp'>
-    <div ng-controller="mainController">
       <nav class='navbar'>
         <div class='navbar-header' id='myNavbar'>
           <ul class='nav nav-tabs nav-justified'>
@@ -19,6 +19,6 @@
             <li><a href='#!/bugs'>Bugs Bunny</a></li>
           </ul>
         </div>
-    </div> <!--end of mainController-->
+        <main ng-view></main>
   </body>
 </html>
