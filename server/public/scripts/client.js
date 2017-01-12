@@ -22,3 +22,14 @@ var myApp = angular.module('myApp', ['ngRoute']);
         redirectTo: 'home'
       });
   }]); //end of config
+
+myApp.factory('fiveFactory', function(){
+  var factory = {};
+
+  var ranNum = function(){
+    Math.floor(Math.random()*10+1);
+    return Math.floor(Math.random()*10+1);
+  };
+  
+
+});
